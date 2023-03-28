@@ -2,58 +2,97 @@
 	box-sizing: border-box;
 	margin: 0;
 	padding: 0;
-}
-
-body {
+  }
+  
+  body {
 	font-family: Arial, sans-serif;
 	font-size: 16px;
 	line-height: 1.5;
-	color: #333;
-}
-
-header {
-	background-color: #f1f1f1;
+	background-color: white;
+	color: black;
+  }
+  
+  body.dark-mode {
+	background-color: black;
+	color: white;
+  }
+  
+  header,
+  nav ul,
+  nav li,
+  nav a,
+  main,
+  section,
+  section h2,
+  footer {
+	background-color: white;
+	color: black;
+  }
+  
+  header.dark-mode,
+  nav ul.dark-mode,
+  nav li.dark-mode,
+  nav a.dark-mode,
+  main.dark-mode,
+  section.dark-mode,
+  section h2.dark-mode,
+  footer.dark-mode {
+	background-color: black;
+	color: white;
+  }
+  
+  header {
 	padding: 20px;
-}
-
-header h1 {
+  }
+  
+  header h1 {
 	font-size: 36px;
 	margin: 0;
-}
-
-nav ul {
+  }
+  
+  nav ul {
 	list-style: none;
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
 	margin-top: 10px;
-}
-
-nav li {
+  }
+  
+  nav li {
 	margin: 0 10px;
-}
-
-nav a {
+  }
+  
+  nav a {
 	text-decoration: none;
 	color: #333;
 	padding: 10px;
-}
-
-main {
+  }
+  
+  nav a:hover {
+	background-color: #333;
+	color: white;
+  }
+  
+  main {
 	padding: 20px;
-}
-
-section {
+  }
+  
+  section {
 	margin-bottom: 20px;
-}
-
-section h2 {
+  }
+  
+  section h2 {
 	font-size: 24px;
 	margin-bottom: 10px;
-}
-
-footer {
-	background-color: #f1f1f1;
+  }
+  
+  footer {
 	padding: 20px;
 	text-align: center;
-}
+  }
+  
+  .dark-mode nav a:hover {
+	background-color: white;
+	color: black;
+  }
+  
